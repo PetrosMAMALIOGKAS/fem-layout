@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 5px dotted red;
+  display: flex;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+li {
+  border: 5px solid #999;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.row {
+  border: 5px solid #000;
+}
+
+.col-1 {
+  border: 5px solid #333;
+}
+
+.row::after {
+  content "";
+  display: table;
+  clear: both;
+}
+
+.col-1 {
+  float: left;
+  margin-left: 4%;
+  width: 20%;
+}
